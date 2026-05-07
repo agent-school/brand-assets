@@ -1,0 +1,13 @@
+## 0.0.0 -> 0.1.0
+- Goal: standardize inconsistent asset/media filenames across launch assets and related folders.
+- Prior state: mixed naming styles (`Screenshot ...`, `ChatGPT Image ...`, UUID names, `... - Copy`, mixed case/spaces).
+- New effect: 93 media files renamed to a single convention: `<folder-slug>-asset-###.<ext>`.
+- Scope covered: `launch-video/`, `Rolie/`, `logo/`, `people/`, `agentschool/background/`, and root-level generated asset names.
+- Validation: post-rename scan reports `0` remaining messy/generated filename patterns.
+
+## 0.1.0 -> 0.2.0
+- Goal: restore semantic filename context using visual inspection, replacing generic numbered names.
+- Prior state: many files had generic names like `*-asset-###` with no content meaning.
+- New effect: 93+ assets now use descriptive, content-based names (for example hero/banner/profile/timeline/logo/character variants).
+- Scope covered: `rolo/launch-video/`, `rolo/rolie/`, `agentschool/background/`, `agentschool/logo/`, root logo asset, and `people/group/`.
+- Validation: repository scan reports `0` remaining filenames containing `-asset-`.
